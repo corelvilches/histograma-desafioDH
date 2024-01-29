@@ -1,0 +1,79 @@
+/* Estilo para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  /* Estilo para los contenedores */
+  #contenedorPrincipal {
+    display: flex;
+  }
+  
+  #configuracionContainer,
+  #muestraContainer {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    margin-bottom: 10px;
+  }
+  
+  #muestraContainer {
+    border-right: 1px solid #ccc;
+  }
+  
+  #histogramaContainer {
+    margin-top: 20px;
+  }
+  
+  /* Estilo para las barras del histograma */
+  #histograma div {
+    height: 50px; /* Ajusta la altura según tu preferencia */
+    width: 20px; /* Ajusta el ancho según tu preferencia */
+    margin-right: 4px;
+    display: inline-block;
+  }
+  
+  /* Estilo para la muestra de clientes en formato de hoja de cálculo */
+  #datosMuestra {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  #datosMuestra p {
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    white-space: nowrap; /* Evita el salto de línea en los textos largos */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Muestra puntos suspensivos en textos que superan el ancho */
+  }
+  
+  /* Colores en tonos pasteles */
+  .colores-pasteles {
+    --color1: #a7e8bd;
+    --color2: #ffdda1;
+    --color3: #ff9a8b;
+    --color4: #c8a2c8;
+    --color5: #9b7c94;
+    --color6: #6497b1;
+    --color7: #83bcb6;
+    --color8: #ffd700;
+    --color9: #96bb7c;
+    --color10: #ffb6b9;
+    --color11: #81b214;
+    --color12: #f29c9f;
+    --color13: #a1caf1;
+    --color14: #f5d0c9;
+    --color15: #ffcccb;
+  }
+  
