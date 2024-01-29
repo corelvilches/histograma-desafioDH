@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Histograma</title>
+</head>
+<body>
+  <!-- Contenedor principal que incluye la configuración, la muestra de clientes y el histograma -->
+  <div id="contenedorPrincipal">
+    <!-- Configuración del Histograma -->
+    <div id="configuracionContainer">
+      <h2>Configuración del Histograma</h2>
+      <!-- Input para el rango inicial -->
+      <label for="rangoInicio">Rango Inicial:</label>
+      <input type="number" id="rangoInicio" value="0" min="0">
+
+      <!-- Input para el rango final -->
+      <label for="rangoFin">Rango Final:</label>
+      <input type="number" id="rangoFin" value="100" min="1">
+
+      <!-- Input para el tamaño del intervalo -->
+      <label for="tamanioIntervalo">Tamaño del Intervalo:</label>
+      <input type="number" id="tamanioIntervalo" value="10" min="1">
+
+      <!-- Botón para generar el histograma -->
+      <button onclick="generarHistograma()">Generar Histograma</button>
+      <!-- Botón para realetorizar la muestra -->
+      <button onclick="realetorizarMuestra()">Realetorizar Muestra</button>
+    </div>
+
+    <!-- Muestra de Clientes -->
+    <div id="muestraContainer">
+      <h2>Muestra de Clientes</h2>
+      <div id="datosMuestra"></div>
+    </div>
+  </div>
+
+  <!-- Contenedor para el Histograma -->
+  <div id="histogramaContainer">
+    <h2>Histograma</h2>
+    <canvas id="histograma"></canvas>
+  </div>
+
+  <!-- Script principal -->
+  <script src="main.js"></script>
+</body>
+</html>
